@@ -12,7 +12,6 @@ import java.util.Map;
 public class JumpListener implements JumpHandler.JumpListener {
 	@Override
 	public void onJump(WebView webView, Map<String, String> params) {
-		Toast.makeText(webView.getContext(), "onJump:", Toast.LENGTH_SHORT)
-				 .show();
+
 	}
 }

@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity implements IEveHandler {
 	}
 
 	private void initWebView() {
+		EveJsBridge.registerJsActionHandler(new JumpHandler(new JumpListener()));
+
 		WebView webView = findViewById(R.id.jsWebView);
 		jsBridge = new EveJsBridge();
 		jsBridge.setWebView(webView);
